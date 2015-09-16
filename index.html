@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Project Euler 1</title>
+	</head>
+
+	<body>
+
+	<script type="text/javascript">
+		var previousTerm = 1;
+		var currentTerm = 2;
+		var nextTerm;
+		var sum = 0;
+
+		while(currentTerm < 4000000) {
+		    if (currentTerm % 2 === 0) {
+		        sum += currentTerm;
+		    }
+		    nextTerm = previousTerm + currentTerm;
+		    previousTerm = currentTerm;
+		    currentTerm = nextTerm;
+		}
+
+		alert(sum);
+	</script>
+
+	</body>
+</html>
